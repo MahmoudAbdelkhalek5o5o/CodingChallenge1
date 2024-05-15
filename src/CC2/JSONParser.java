@@ -36,12 +36,7 @@ public class JSONParser {
         System.out.println("Valid Json");
     }
     private static boolean isJson(String text) throws Exception {
-        // verify {} in the json file
-        // use step1 tests
-
-        Stack<Character> stack = new Stack<>();
         // verify key value pairs
-        // use step2 && step3 tests
         if(text.length() == 0) return true;
         text = text.trim();
         if(text.charAt(0) == ',' || text.charAt(text.length()-1) == ',')
@@ -51,7 +46,6 @@ public class JSONParser {
         text = text.replaceAll(" ", "");
         while(i<text.length()){
             //get key
-            String value = "";
             String key = "";
             while (text.charAt(i) != ':'){
                 key += text.charAt(i);
@@ -100,6 +94,7 @@ public class JSONParser {
     public static int getJsonValueAndVerifyToReturnIndexAfter(String text, int i) throws Exception{
         String value = "";
         Stack<Character> stack = new Stack<>();
+        // get JSON value
         if (text.charAt(i) == '{') {
             value+=text.charAt(i);
             stack.push(text.charAt(i++));
