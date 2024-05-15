@@ -26,3 +26,10 @@ this is a valid json file
 "key-l": ['list value']
 }
 this is not a valid json file as String are quoted by "" not ''
+
+to test files
+1-put your JSON files in tests/step5
+2-change directory there:
+    cd tests/step5
+3-run the following command
+    java JSONParser [your_file.java]
