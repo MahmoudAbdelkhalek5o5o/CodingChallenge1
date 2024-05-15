@@ -1,0 +1,47 @@
+{
+  "result": [
+    "repeat",
+    {
+      "status": "enum",
+      "name": {
+        "first": "firstName()",
+        "middle": "middleName()",
+        "last": "lastName()"
+      },
+      "username": "this.name.first-this.name.last",
+      "password": "password()",
+      "emails": [
+        "repeat(2)",
+        "email(gmail.com)"
+      ],
+      "phoneNumber": "phoneNumber()",
+      "location": {
+        "street": "street()",
+        "city": "city()",
+        "state": "state()",
+        "country": "country()",
+        "zip": "zipCode()",
+        "coordinates": {
+          "latitude": "latitude()",
+          "longitude": "longitude()"
+        }
+      },
+      "website": "url()",
+      "domain": "domainName()",
+      "job": {
+        "title": "jobTitle()",
+        "descriptor": "jobDescriptor()",
+        "area": "jobArea()",
+        "type": "jobType()",
+        "company": "companyName()"
+      },
+      "creditCard": {
+        "number": "creditCardNumber()",
+        "cvv": "creditCardCVV()",
+        "issuer": "creditCardIssuer()"
+      },
+      "uuid": "guid()",
+      "objectId": "objectId()"
+    }
+  ]
+}
