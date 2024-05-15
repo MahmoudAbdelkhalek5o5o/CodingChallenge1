@@ -1,35 +1,48 @@
-This challenge is to build your own JSON parser.
+# Coding Challenge 2
 
-Building a JSON parser is an easy way to learn about parsing techniques which are useful for everything from parsing simple data formats through to building a fully featured compiler for a programming language.
+This repository contains the solution for Coding Challenge 2.
 
-Parsing is often broken up into two stages: lexical analysis and syntactic analysis. Lexical analysis is the process of dividing a sequence of characters into meaningful chunks, called tokens. Syntactic analysis (which is also sometimes referred to as parsing) is the process of analysing the list of tokens to match it to a formal grammar.
+## Table of Contents
 
-You can read far more about building lexers, parses and compilers in what is regarded as the definitive book on compilers: Compilers: Principles, Techniques, and Tools - widely known as the “Dragon Book” (because there’s an illustration of a dragon on the cover).
+- [Project Description](#project-description)
+- [Prerequisites](#prerequisites)
+- [Setup Instructions](#setup-instructions)
+- [Usage](#usage)
+- [Running the Tests](#running-the-tests)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
+## Project Description
 
+Coding Challenge 2 involves implementing a JSON parser that reads a JSON file and prints whether this JSON file is valid or not. The JSON file is passed as a command-line argument to the program.
 
-{
-"key1": true,
-"key2": false,
-"key3": null,
-"key4": "value",
-"key5": 101
-}
-this is a valid json file
+## Prerequisites
 
-{
-"key": "value",
-"key-n": 101,
-"key-o": {
-"inner key": "inner value"
-},
-"key-l": ['list value']
-}
-this is not a valid json file as String are quoted by "" not ''
+- Java Development Kit (JDK) 8 or higher
+- Git
 
-to test files
-1-put your JSON files in tests/step5
-2-change directory there:
-    cd tests/step5
-3-run the following command
-    java JSONParser [your_file.java]
+## Setup Instructions
+
+1. **Clone the repository**
+
+    ```sh
+    git clone https://github.com/MahmoudAbdelkhalek5o5o/CodingChallenge1.git
+    cd CodingChallenge1/src/CC2
+    ```
+
+2. **Compile the Java files**
+
+   Open a terminal in the `src/CC2` directory and run:
+
+    ```sh
+    javac JSONParser.java
+    ```
+
+## Usage
+
+After compiling, you can run the main class to see the solutions in action. Here’s how to execute the main class:
+
+```sh
+java JSONParser <input_file>
+```
