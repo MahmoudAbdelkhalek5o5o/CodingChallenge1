@@ -1,4 +1,4 @@
-package CC2;
+package JSONParser;
 
 import java.io.File;
 import java.util.*;

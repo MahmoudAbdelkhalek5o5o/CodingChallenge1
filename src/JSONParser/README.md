@@ -28,7 +28,7 @@ Coding Challenge 2 involves implementing a JSON parser that reads a JSON file an
 
     ```sh
     git clone https://github.com/MahmoudAbdelkhalek5o5o/CodingChallenge1.git
-    cd CodingChallenge1/src/CC2
+    cd CodingChallenge1/src/JSONParser
     ```
 
 2. **Compile the Java files**
