@@ -11,7 +11,7 @@ public class JSONParser {
 //                throw new Exception("No file name provided");
             //production code
             File jsonFile = new File("tests/"+args[0]);
-            // test code
+            // test.txt code
 //            File jsonFile = new File("src/CC2/tests/step4/valid.json");
             Scanner myReader = new Scanner(jsonFile);
             while (myReader.hasNextLine()) {
